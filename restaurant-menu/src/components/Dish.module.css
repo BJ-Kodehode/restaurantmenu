@@ -1,0 +1,61 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s ease;
+  padding: clamp(1rem, 3%, 1.5rem);
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.category {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #e67e22;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.ingredients {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0.5rem 0 0 0;
+}
+
+.title {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.ingredients {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+  }
+}

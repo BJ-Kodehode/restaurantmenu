@@ -1,0 +1,43 @@
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+
+  /* Default for store skjermer */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Laptop */
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Mobil */
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0;
+  }
+  /* Mobilvisning */
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* Tablet */
+  @media (min-width: 481px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Laptop */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
